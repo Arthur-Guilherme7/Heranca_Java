@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.laboratorio.br.atividadec.ContCaracterController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <TextField fx:id="textoInput" promptText="Digite um texto" />
+    <Button text="Contar" onAction="#contarCaracteres" />
+    <Label fx:id="resultadoLabel" text="Número de caracteres: " />
+</VBox>

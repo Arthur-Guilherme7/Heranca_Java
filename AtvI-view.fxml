@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/17.0.6" fx:controller="com.atv_i.atv_i.AtviController">
+    <children>
+        <Pane prefHeight="229.0" prefWidth="292.0">
+            <children>
+                <Label layoutX="106.0" layoutY="14.0" prefHeight="25.0" prefWidth="117.0" text="Conversor de Temperatura"/>
+                <Label layoutX="27.0" layoutY="58.0" text="Temperatura em Celsius: "/>
+                <TextField fx:id="celcius" layoutX="96.0" layoutY="54.0"/>
+            </children>
+        </Pane>
+        <Label fx:id="resultado" layoutX="76.0" layoutY="258.0" prefHeight="38.0" prefWidth="325.0" text="Label" textFill="#0023e9" style="-fx-font-size: 14.0;"/>
+    </children>
+
+    <Button  layoutX="144.0" layoutY="159.0" mnemonicParsing="false"  onAction="#ClickBotao" text="CALCULAR"/>
+</VBox>

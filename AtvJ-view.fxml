@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.atv_j.atv_j.AtvjController">
+    <children>
+        <Label text="Conversor de Moedas" layoutX="90.0" layoutY="20.0" />
+
+        <Label text="Digite o valor em Reais (R$):" layoutX="20.0" layoutY="70.0"/>
+        <TextField fx:id="valorReaisField" layoutX="180.0" layoutY="65.0" prefWidth="200.0"/>
+
+        <Button text="Converter" layoutX="180.0" layoutY="110.0" fx:id="converterButton" onAction="#converterMoeda"/>
+
+        <Label text="Conversões:" layoutX="20.0" layoutY="160.0"/>
+        <TextArea fx:id="resultadoArea" layoutX="20.0" layoutY="190.0" prefWidth="360.0" prefHeight="150.0" editable="false"/>
+    </children>
+</AnchorPane>
